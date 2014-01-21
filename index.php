@@ -19,8 +19,8 @@ function isOnline($url) {
 
 		apc_add("LAST_CACHE_TIME_" . $url, time());
 		$resURL = curl_init($url);
-    	curl_setopt($resURL, CURLOPT_NOBODY, true);
-    	curl_setopt($resUrl, CURLOPT_FOLLOWLOCATION, true);
+		curl_setopt($resURL, CURLOPT_NOBODY, true);
+		curl_setopt($resUrl, CURLOPT_FOLLOWLOCATION, true);
 		curl_setopt($resURL, CURLOPT_TIMEOUT, 1);
 		curl_exec($resURL);
 		$intReturnCode = curl_getinfo($resURL, CURLINFO_HTTP_CODE);
