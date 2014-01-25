@@ -45,13 +45,13 @@ function isOnline($url) {
 	</head>
 	<body>
 		<h1>Ist die OVGU online?</h1>
-		<img src="src/otto_nein.png">
+		<img src="src/otto_ja.png">
 		
 		<hr>
 
 		<table>
 			<tr>
-				<td>Homepage*</td>
+				<td>Homepage</td>
 				<td>
 					<?php if (isOnline(OVGU_URL)) { ?>
 						<span class="on">Online</span>
@@ -61,7 +61,7 @@ function isOnline($url) {
 				</td>
 			</tr>
 			<tr>
-				<td>HisQis</td>
+				<td>HISQIS</td>
 				<td>
 					<?php if (isOnline(HISQIS_URL)) { ?>
 						<span class="on">Online</span>
@@ -101,9 +101,15 @@ function isOnline($url) {
 				</td>
 			</tr>
 			<tr>
-				<td>WLAN</td>
+				<td>WLAN-802.1X</td>
 				<td>
-					<span class="off">Offline</span>
+					<span class="on">Online</span>
+				</td>
+			</tr>
+			<tr>
+				<td>WLAN-eduroam</td>
+				<td>
+					<span class="on">Online</span>
 				</td>
 			</tr>
 			<tr>
@@ -113,9 +119,9 @@ function isOnline($url) {
 				</td>
 			</tr>
 			<tr>
-				<td>Telefon</td>
+				<td>Telefone</td>
 				<td>
-					<span class="off">Offline</span>
+					<span class="on">Online</span>
 				</td>
 			</tr>
 			<tr>
@@ -127,26 +133,23 @@ function isOnline($url) {
 			<tr>
 				<td>Rückmeldeautomaten</td>
 				<td>
-					<span class="off">Offline</span>
+					<span class="on">Online</span>
 				</td>
 			</tr>			
 		</table>
 
-		
-		<small>* außer medizinische Fakultät</small>
-
 		<hr>
 
 		<div>
-			Stand: 21.1.2014 9:45 Uhr
+			Stand: 25.1.2014 20:00 Uhr
 		</div>
 
 
-		<a href="mailto:hi@jfilter.de?&subject=OVGU Down">Kontakt</a>
+		<a href="mailto:kontakt@istdieovgudown.de">Kontakt</a>
 		|
 		<a href="impressum.html">Impressum</a>
 
-		<p><small>Nach einer Idee von <a href="https://twitter.com/rosario_raulin">Rosario Raulin</a>, umgesetzt durch <a href="https://twitter.com/fil_ter">Johannes Filter</a>.</small></p>
+		<p><small>Serious Web Developement von<a href="https://twitter.com/rosario_raulin">Rosario Raulin</a> und <a href="https://twitter.com/fil_ter">Johannes Filter</a>.</small></p>
 
 
 
